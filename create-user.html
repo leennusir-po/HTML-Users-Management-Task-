@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Create User</title>
+</head>
+<body>
+  <h1>Create User</h1>
+
+  <div id="loading" style="display:none;">Loading...</div>
+  <div id="error" style="display:none;color:red;">Failed to load. Please try again.</div>
+
+  <form id="create-user-form">
+    <label>First Name: <input type="text" placeholder="John"></label><br><br>
+    <label>Last Name: <input type="text" placeholder="Doe"></label><br><br>
+    <label>Email: <input type="email" placeholder="john.doe@example.com"></label><br><br>
+    <label>Role:
+      <select>
+        <option value="admin">Admin</option>
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+        <option value="parent">Parent</option>
+      </select>
+    </label><br><br>
+    <label>School:
+      <select>
+        <option value="school-1">School A</option>
+        <option value="school-2">School B</option>
+      </select>
+    </label><br><br>
+    <button type="submit">Create User</button>
+  </form>
+</body>
+</html>
