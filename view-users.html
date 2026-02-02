@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>View Users</title>
+</head>
+<body>
+  <h1>View Users</h1>
 
+  <div id="loading" style="display:none;">Loading users...</div>
+  <div id="error" style="display:none;color:red;">Unable to load users.</div>
+  <div id="empty" style="display:none;">No users found.</div>
+
+  <table border="1" id="users-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>School</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>john.doe@example.com</td>
+        <td>Teacher</td>
+        <td>School A</td>
+        <td>
+          <button>Update</button>
+          <button>Assign Permissions</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td>jane.smith@example.com</td>
+        <td>Student</td>
+        <td>School B</td>
+        <td>
+          <button>Update</button>
+          <button>Assign Permissions</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
