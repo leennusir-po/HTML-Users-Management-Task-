@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Update User</title>
+</head>
+<body>
+  <h1>Update User</h1>
+
+  <div id="loading" style="display:none;">Loading user data...</div>
+  <div id="error" style="display:none;color:red;">Failed to load user info.</div>
+
+  <form id="update-user-form">
+    <label>First Name: <input type="text" value="John"></label><br><br>
+    <label>Last Name: <input type="text" value="Doe"></label><br><br>
+    <label>Email: <input type="email" value="john.doe@example.com"></label><br><br>
+    <label>Role:
+      <select>
+        <option value="admin">Admin</option>
+        <option value="teacher" selected>Teacher</option>
+        <option value="student">Student</option>
+        <option value="parent">Parent</option>
+      </select>
+    </label><br><br>
+    <label>School:
+      <select>
+        <option value="school-1" selected>School A</option>
+        <option value="school-2">School B</option>
+      </select>
+    </label><br><br>
+    <button type="submit">Update User</button>
+  </form>
+</body>
+</html>
