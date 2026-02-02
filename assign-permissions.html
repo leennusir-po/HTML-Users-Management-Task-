@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Assign Actions & Permissions</title>
+</head>
+<body>
+  <h1>Assign Actions & Permissions</h1>
+
+  <div id="loading" style="display:none;">Loading roles and modules...</div>
+  <div id="error" style="display:none;color:red;">Failed to load permissions.</div>
+
+  <form id="assign-permissions-form">
+    <label>Select User:
+      <select>
+        <option value="1">John Doe - Teacher</option>
+        <option value="2">Jane Smith - Student</option>
+      </select>
+    </label><br><br>
+
+    <label>Select Module:
+      <select>
+        <option value="users">Users</option>
+        <option value="grades">Grades</option>
+        <option value="classes">Classes</option>
+      </select>
+    </label><br><br>
+
+    <label>Actions:
+      <input type="checkbox" value="create"> Create
+      <input type="checkbox" value="edit"> Edit
+      <input type="checkbox" value="view" checked> View
+      <input type="checkbox" value="delete"> Delete
+    </label><br><br>
+
+    <button type="submit">Assign Permissions</button>
+  </form>
+</body>
+</html>
